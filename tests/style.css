@@ -61,8 +61,15 @@ nav ul {
     display: flex;
 }
 
-.nav-links li {
+.nav-links a {
     margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #F2A057;
 }
 
 .logo-container {
@@ -161,9 +168,149 @@ nav ul {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
 }
+
+.consults {
+    /* max-width: 800px; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    background-color: #262626;
+}
+
+.consult-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.consult-links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 20;
+    margin: 0;
+
+    width: 100%;
+}
+
+.consult-links li {
+    margin: 0 5px;
+    /* This adds space on both sides of each button */
+}
+
+.consult-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    /* Fixed width */
+    height: 50px;
+    /* Fixed height */
+    background-color: #F2A057;
+    /* Orange color */
+    color: #262626;
+    text-decoration: none;
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease;
+    font-size: 25px;
+    font-weight: bold;
+    /* Adjust as needed */
+    text-align: center;
+}
+
+
+.consult-links a:hover {
+    background-color: #cf804d;
+    /* Darker orange on hover */
+}
+
+.reviews {
+    text-align: center;
+    padding: 20px;
+    background-color: #262626;
+    color: white;
+    font-size: 47px;
+}
+
+#review-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.review {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #262626;
+    /* Adjust as needed */
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.foot-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.foot-logo-container img {
+    margin-bottom: 10px;
+}
+
+.foot-logo-container span {
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer-text {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.footer-row {
+    flex-basis: 30%;
+}
+
+.footer-row h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.footer-row p {
+    margin: 5px 0;
+}
+
+.footer-row a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-row a:hover {
+    color: #F2A057;
+}
+
 
 /* Typography Sizes */
 h1 {
@@ -202,5 +349,25 @@ p {
     .intro-text h1 {
         font-size: 80px;
         /* Or any maximum size you prefer */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .foot-logo-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-text {
+        flex-direction: column;
+    }
+
+    .footer-row {
+        margin-bottom: 20px;
     }
 }
