@@ -59,6 +59,7 @@ nav ul {
 
 .nav-links {
     display: flex;
+    transition: 1s;
 }
 
 .nav-links a {
@@ -217,9 +218,9 @@ nav ul {
     /* Orange color */
     color: #262626;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     /* Rounded corners */
-    transition: background-color 0.3s ease;
+    transition: background-color 0.7s ease;
     font-size: 25px;
     font-weight: bold;
     /* Adjust as needed */
@@ -229,6 +230,7 @@ nav ul {
 
 .consult-links a:hover {
     background-color: #cf804d;
+
     /* Darker orange on hover */
 }
 
@@ -258,6 +260,7 @@ footer {
     /* Adjust as needed */
     color: white;
     padding: 20px 0;
+
 }
 
 .footer-container {
@@ -305,6 +308,7 @@ footer {
 .footer-row a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 .footer-row a:hover {
