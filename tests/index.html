@@ -27,23 +27,23 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <div class="logo-container">
-                    <img src="C:\Users\31686\Documents\GitHub\Tailored-Experience-Travel\public\tailored_experience_logo.png"
-                        height="40" width="40" alt="The Tailored Experience Travel Logo">
-                    <span>The Tailored Travel Experience</span>
+            <div class="header-content">
+                <div class="logo-name-container">
+                    <img src="C:\Users\31686\Documents\GitHub\Tailored-Experience-Travel\dist\tailored_experience_logo.png"
+                        alt="Logo" class="logo">
+                    <span class="company-name">The Tailored Experience Travel</span>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#your-agent">Your Agent</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="your_agent.html">Your Agent</a></li>
                 </ul>
-            </ul>
+            </div>
         </nav>
     </header>
     <main>
         <div class="top-bar"></div>
         <section class="intro">
-            <img src="C:\Users\31686\Documents\GitHub\Tailored-Experience-Travel\public\Bali Logo.jpg"
+            <img src="C:\Users\31686\Documents\GitHub\Tailored-Experience-Travel\dist\Bali Logo.jpg"
                 alt="A woman with outstretched arms standing in an infinity pool overlooking a tropical jungle.">
             <div class="intro-overlay"></div>
             <div class="intro-text">
@@ -82,15 +82,15 @@
             </div>
         </section>
 
-        <section class="reviews">
-            <div>What are my clients saying?</div>
-            <div id="review-container">
-                GOOGLE REVIEWS GO HERE<br>
-                js script built, need to do:<br>
-                set up api key<br>
-                secure api key via backend service/proxy (dependant on host)<br>
+        <div class="section reviews">
+            <div>
+                What are my clients saying?
             </div>
-        </section>
+
+            <div id="review-container">
+                <!-- Google reviews will be dynamically inserted here -->
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -103,7 +103,7 @@
 <footer>
     <div class="footer-container">
         <div class="foot-logo-container">
-            <img src="C:\Users\31686\Documents\GitHub\Tailored-Experience-Travel\public\tailored_experience_logo.png"
+            <img src="C:\Users\31686\Documents\GitHub\Tailored-Experience-Travel\dist\tailored_experience_logo.png"
                 height="160" width="160" alt="The Tailored Experience Travel Logo">
         </div>
         <div class="footer-text">
@@ -111,7 +111,7 @@
                 <h3>Contact</h3>
                 <p><a href="mailto:Travel@TheTailoredExperienceTravel.com">
                         Travel@TheTailoredExperienceTravel.com</a></p>
-                <p>(503) 505-4833</p>
+                <p><a href="tel:+15035054833">(503) 505-4833</a></p>
             </div>
             <!-- <div class="footer-row">
                 <h3>Quick Links</h3>

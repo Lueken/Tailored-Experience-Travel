@@ -42,45 +42,51 @@ header {
     height: 52px;
     background-color: #262626;
     color: white;
-    padding: 4px;
+    padding: 0 20px;
     z-index: 1000;
-    margin: 0;
 }
 
-nav ul {
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    list-style-type: none;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 2;
+    height: 100%;
 }
 
-.nav-links {
+.logo-name-container {
     display: flex;
-    transition: 1s;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul.nav-links {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.nav-links li {
+    margin-left: 20px;
 }
 
 .nav-links a {
-    margin: 0 15px;
     text-decoration: none;
     color: white;
+
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #F2A057;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    margin-left: 15px;
-}
-
-.logo-container span {
-    margin-left: 15px;
 }
 
 /* Top Bar */
@@ -244,14 +250,30 @@ nav ul {
 #review-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 40px;
 }
 
 .review {
     width: 30%;
-    padding: 10px;
+    min-width: 250px;
+    padding: 20px;
+    margin: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    text-align: left;
+}
+
+.review p:first-child {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.review p:last-child {
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 footer {
